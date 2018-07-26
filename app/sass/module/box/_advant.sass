@@ -1,0 +1,63 @@
+.advant
+  align-items: stretch
+  margin: 0
+  margin-top: 0
+  .link-push
+    color: #ffffff
+    //padding: .5rem
+    background: #000
+    //line-height: 56px
+    //border-radius: 50px
+    margin: 1rem
+  .item
+    width: 100%
+    max-width: 50%
+    min-height: 250px
+    +bg(3860900)
+    background-size: cover
+    border: 3px solid $white
+    background-size: cover
+    position: relative
+    @media(max-width:960px)
+      max-width: 100%
+    .h1
+      position: absolute
+      top: 5%
+      left: 5%
+      color: $white
+      padding: .5rem 2rem
+      background: rgba(0, 0, 0, 0.56)
+      text-transform: uppercase
+  .info-block
+    padding-top: 8rem
+    max-width: 500px
+    margin-left: 5%
+    padding-bottom: 1.2rem
+    @extend .f-row
+    flex-direction: column
+    .element-id
+      margin-bottom: 1%
+      padding: .5rem 4rem
+      background: rgba(0, 0, 0, 0.56)
+      color: $white
+      font:
+        size: 1.25em
+        weight: light
+      span
+        color: $white
+        font:
+          weight: bold
+    a
+      border-bottom: 2px solid transparent
+      @include anim_border
+      &:hover
+        border-bottom: 2px solid $white
+        @include anim_border
+  &.big
+    .item
+      .h1
+        background: $white
+        font:
+          size: 1.3em
+        color: #000
+        text-transform: none
